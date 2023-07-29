@@ -25,8 +25,8 @@ void findIndexes(int *v,int n, int size)
             tmp--;
         if(tmp && hash[n-tmp] && hash[n-tmp] != hash[tmp])
         {
-          if(k==-1)
-            k=0;
+          if(hash[n-tmp] ==-1)
+            hash[n-tmp] = 0;
             printf("Index k: %d Index: w: %d \n", hash[n-tmp], hash[tmp]);
             exit(0);
         }
